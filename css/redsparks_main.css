@@ -1,0 +1,2623 @@
+
+
+body {
+    width: 100%;
+    overflow: scroll;
+}
+
+.main_bg {
+    /* background: url(/new_kgc/images/main_bg.jpg) no-repeat; */
+    background: rgb(96,27,27);
+    background: linear-gradient(180deg, rgba(96,27,27,1) 0%, rgba(57,18,24,1) 100%);
+    background-size: cover;
+    /* display: none; */
+}
+
+/* header */
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    height: 90px;
+    transition: all 0.3s;
+}
+
+/* logo */
+
+.logo_wrap {
+    display: flex;
+    width: 167px;
+    margin-right: 34px;
+    align-items: center;
+}
+
+.logo_wrap a{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+.logo_wrap_img img {
+    display: block;
+    width: 70px;
+    height: 60.2px;
+    margin-right: 15px;
+}
+
+.logo_wrap span {
+    white-space: nowrap;
+    font-size: 1.25rem;
+    margin-right: 6px;
+}
+
+.logo_wrap_btn img {
+    width: 18px;
+}
+
+.explain {
+    position: absolute;
+    color: #fff;
+    background: #2438ee;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: .875rem;
+    font-weight: 600;
+    top: 80px;
+    left: 90px;
+    z-index: 100;
+}
+
+/* gnb */
+
+.gnb ul {
+    width: 534px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gnb > ul > li > a  {
+    font-size: 1.125rem;
+    color: #fff;
+}
+
+.gnb > ul > li > a:hover {
+    color: #d91833 !important;
+}
+
+.gnb dl {
+    position: absolute;
+    top: 130px;
+    line-height: 2.4;
+    z-index: 5;
+}
+
+.gnb_01 {
+    position: absolute;
+    left: 23%;
+}
+
+.gnb_02 {
+    position: absolute;
+    left: 33%;
+}
+
+.gnb_03 {
+    position: absolute;
+    left: 43%;
+}
+
+.gnb_04 {
+    position: absolute;
+    left: 53%;
+}
+
+.gnb_05 {
+    position: absolute;
+    left: 63%;
+}
+
+.gnb_06 {
+    position: absolute;
+    left: 73%;
+}
+
+.gnb dt {
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.gnb dd {
+    font-size: 1rem;
+    color: #565656;
+}
+
+.gnb dd a:hover {
+    font-size: 1rem;
+    color: rgb(217, 24, 51);
+}
+
+.nav_bg {
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    top: 90px;
+    left: 0;
+    height: 333px;
+    border-top: 1px solid #e6e2e2;
+}
+
+.gnb dl, .nav_bg {
+    display: none;
+}
+
+/* top menu */
+
+.top_menu ul {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_menu > ul > li > a {
+    font-size: .9375rem;
+    color: #fff;
+}
+
+.nav_dash{
+    display: inline-block;
+    margin-left: 10px;
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #fff;
+}
+
+
+
+/* mobile menu */
+
+.mobile_menu {
+    display: none;
+}
+
+.mobile_menu ul {
+    display: flex;
+    justify-content: space-between;
+    width: 104px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+/* 검색창 */
+
+.search_wrap {
+    display: none;
+    width: 100%;
+    height: 184px;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    background: #fff;
+    border-top: 1px solid #e6e2e2;
+}
+
+.input_wrap {
+    display: flex;
+    gap: 10px;
+    background: rgb(248, 248, 248);
+    width: 800px;
+    padding: 15px 32px;
+    box-sizing: border-box;
+    margin: 60px auto;
+    border-radius: 50px;
+    align-items: center;
+}
+
+input {
+    font-size: 20px;
+    width: 100%;
+    font-weight: 700;
+    height: 40px;
+    background: none;
+    border: none;
+}
+
+input::placeholder {
+    color: #a8a8a8;
+}
+
+/* logo_category */
+
+.logo_category{
+    width: 100%;
+    height:660px;
+    background-color:#ffffff;
+    border-top:1px solid #efefef;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    z-index: 1000;
+    display: none;
+}
+
+.logo_cont_wrap{
+    width: 1356px;
+    margin: 0 auto;
+    padding-top:50px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+/*men*/
+
+.men_font{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.d_flex{
+    display: flex;
+    justify-content: center;
+}
+
+.men_emb_grop{
+    display: flex;
+    padding-top: 20px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.men_emb_grop p{
+    font-size:16px;
+}
+
+.hr{
+    width: 1356px;
+    height: 1px;
+    background-color: #efefef;
+    margin: 40px 0;
+}
+
+/*women*/
+
+.women_font{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.m_emb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    background: #f9f9f9;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    transition: border 0.4s;
+}
+
+.w_emb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    background: #f9f9f9;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    transition: border 0.4s;
+}
+
+.d_flex{
+    display: flex;
+    justify-content: center;
+}
+
+.women_emb_grop{
+    display: flex;
+    padding-top: 20px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.women_emb_grop p{
+    font-size:16px;
+}
+
+.m_emb img{
+    width: 70px;
+    height: 60px;
+}
+
+.w_emb img{
+    width: 70px;
+    height: 60px;
+}
+
+#jung_emb{
+    border: 5px solid #D91833 !important;
+}
+
+.kovo_home{
+    margin:0 auto;
+    width: 172px;
+    height:55px;
+    color:#ffffff;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-top:15px;
+    box-sizing: border-box;
+    background: rgb(36, 56, 239);
+}
+
+/* main */
+
+.swiper_banner {
+    position: relative;
+}
+
+.swiper_banner img {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+}
+
+/* main */
+
+.main_wrap {
+    width: 100%;
+    color: #222;
+}
+
+main > img {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -10;
+}
+
+
+/* main content */
+
+.main_content_wrap {
+    width: 1424px;
+    display: block;
+    margin: 0 auto;
+    padding: 40px 28px 80px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.main_content_wrap h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+/* content 1 */
+
+.content_01 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_01 > div {
+    width: 672px;
+}
+
+.content_01 h2 {
+    margin: 0 0 20px;
+}
+
+.date {
+    display: inline-block;
+    width: 272px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #222;
+    margin: 0 auto 6px;
+}
+
+.place {
+    display: inline-block;
+    width: 272px;
+    font-size: .875rem;
+    color: #22222299;
+    margin: 0 0 20px;
+}
+
+.img_wrap {
+    width: 68px;
+    height: 54px;
+    padding: 12px 5px;
+    border: 1px solid #e5e7eb;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.img_wrap img {
+    display: inline-block;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+/* 최근 경기 결과 */
+
+.game_result {
+    position: relative;
+}
+
+.game_result > a, .next_game > a {
+    display: flex;
+    position: absolute;
+    gap: 3px;
+    top: 7px;
+    right: 0;
+    font-size: 1.125rem;
+    color: #666;
+    align-items: center;
+}
+
+.result_wrap, .next_wrap {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+}
+
+.result_wrap > div, .next_wrap > div {
+    height: 273px;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 24px;
+}
+
+.result_wrap > div, .next_wrap > div {
+    width: 328px;
+}
+
+.match_wrap {
+    width: 100%;
+    padding: 24px 28px;
+    box-sizing: border-box;
+}
+
+.name {
+    font-size: .875rem;
+}
+
+.match {
+    display: flex;
+    justify-content: space-between;
+    width: 272px;
+    height: 109px;
+}
+
+.score {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 4;
+    gap: 2px;
+    color: #22222233;
+}
+
+.score_01 {
+    color: #d91833;
+}
+
+.score_02 {
+    color: #22222233;
+}
+
+.result_view {
+    width: 328px;
+    background: #f9f9f9;
+    border-radius: 0 0 24px 24px;
+    padding: 12px 22px;
+    box-sizing: border-box;
+}
+
+.result_view a {
+    display: block;
+    height: 21px;
+    font-size: .875rem;
+    font-weight: 700;
+}
+
+.ng {
+    background: #d91833;
+    color: #fff;
+}
+
+/* content 2 */
+
+.content_02 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 85px;
+    width: 1368px;
+    height: 251px;
+}
+
+.content_02 h2 {
+    margin-bottom: 1.25rem;
+}
+
+.live_wrap {
+    width: 336px;
+    position: relative;
+}
+
+.lw_img {
+    width: 336px;
+    height: 189px;
+    position: relative;
+}
+
+.lw_img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.lw_img p {
+    width: 114px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    transform: translateY(-50%) translateX(-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+.event_wrap {
+    height: 251px;
+    display: flex;
+    flex-direction: column;
+}
+
+.event {
+    width: 1006px;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 12px;
+    flex: 1 1 0%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.event p {
+    width: 150px;
+    height: 28px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-top: 1.5rem;
+    color: #c3c3c3;
+    font-weight: 600;
+}
+
+.event_wrap > a {
+    display: flex;
+    position: absolute;
+    gap: 3px;
+    top: 5px;
+    right: 12px;
+    font-size: 1.125rem;
+    color: #666;
+    align-items: center;
+}
+
+/* content 3 */
+
+.content_03 {
+    position: relative;
+    margin-top: 75px;
+}
+
+.content_03 h2 {
+    width: 1368px;
+    margin: 0 0 20px;
+}
+
+.highlight ul {
+    width: 1368px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, minmax(0,1fr));
+}
+
+.highlight ul li {
+    width: 261px;
+}
+
+.video_img {
+    width: 261px;
+    height: 147px;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.highlight ul img {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+    filter: brightness(60%);
+}
+
+.video_txt {
+    height: 48px;
+    display: block;
+    font-size: 1rem;
+    margin: 0 0 10px;
+    color: #222;
+    font-weight: 600;
+}
+
+.video_date {
+    font-size: .875rem;
+    color: #999;
+}
+
+.content_03 > a {
+    display: flex;
+    position: absolute;
+    gap: 3px;
+    top: 7px;
+    right: 0;
+    font-size: 1.125rem;
+    color: #666;
+    align-items: center;
+}
+
+/* content 4 */
+
+.content_04 {
+    position: relative;
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_04 h2 {
+    margin: 0 0 20px;
+}
+
+/* 최근 경기결과 */
+
+.all_result {
+    position: relative;
+}
+
+.all_result table {
+    width: 446px;
+}
+
+.all_result thead, .w_ranking thead {
+    background: rgba(255, 241, 241, 1);
+}
+
+.table_01 {
+    height: 46px;
+    font-size: .9375rem;
+    font-weight: 500;
+}
+
+.t_name_01 {
+    width: 135px;
+    text-align: right;
+}
+
+.t_result {
+    margin: auto;
+}
+
+.t_name_02 {
+    width: 135px;
+    text-align: left;
+}
+
+.all_result td {
+    height: 65px;
+}
+
+.table_date {
+    display: flex;
+    padding: 0 4.5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.team_01 {
+    width: 135px;
+    height: 42px;
+    text-align: right;
+}
+
+.team_01 > img {
+    margin: 0 0 0 4px;
+}
+
+.team_02 {
+    width: 135px;
+    height: 42px;
+}
+
+.team_02 > img {
+    margin: 0 4px 0 0;
+}
+
+.all_result p {
+    display: inline-block;
+}
+
+.all_result img {
+    display: inline-block;
+    width: 40px;
+    height: auto;
+    object-position: center;
+    vertical-align: middle;
+}
+
+.ts_wrap {
+    width: 65px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.table_score {
+    color: rgba(34, 34, 34, 0.2);
+}
+
+.table_02 {
+    background: rgb(249, 249, 249);
+}
+
+.table_03 {
+    background: #fff;
+}
+
+/* 여자부 순위 */
+
+.w_ranking {
+    position: relative;
+}
+
+.w_ranking_table {
+    height: 90%;
+}
+
+.w_ranking table {
+    width: 100%;
+    height: 100%;
+}
+
+.w_ranking th {
+    height: 46px;
+}
+
+.w_90 {
+    width: 90px;
+}
+
+.team_name {
+    width: 127px;
+    text-align: left;
+}
+
+.w_52 {
+    width: 52px;
+}
+
+.w_80 {
+    width: 80px;
+}
+
+.w_67 {
+    width: 67px;
+}
+
+.w_ranking td {
+    height: 63px;
+    font-size: .9375rem;
+    color: #444;
+    padding: 1px;
+    margin: auto;
+    text-align: center;
+}
+
+.fw_600 {
+    font-weight: 600;
+}
+
+.w_ranking_img {
+    display: flex;
+    text-align: left;
+}
+
+.w_ranking_img p {
+    font-size: .8125rem;
+    margin: auto 0;
+}
+
+.w_ranking  img {
+    display: inline-block;
+    object-position: center;
+    vertical-align: middle;
+    width: 42px;
+    height: auto;
+}
+
+.w_ranking p {
+    display: inline-block;
+}
+
+.table_04 {
+    background: rgb(234, 234, 234);
+}
+
+.all_result > a, .w_ranking > a {
+    display: flex;
+    position: absolute;
+    gap: 3px;
+    top: 7px;
+    right: 0;
+    font-size: 1.125rem;
+    color: #666;
+    align-items: center;
+}
+
+/* content 5 */
+
+.content_05 {
+    width: 100%;
+    position: relative;
+    margin-top: 75px;
+    white-space: nowrap;
+}
+
+.content_05 h2 {
+    margin: 0 0 20px;
+}
+
+.content_05 > a {
+    display: flex;
+    position: absolute;
+    gap: 3px;
+    top: 7px;
+    right: 0;
+    font-size: 1.125rem;
+    color: #666;
+    align-items: center;
+}
+
+/* 선수 랭킹 */
+
+.ranking_part {
+    width: 1368px;
+    margin: 0 0 20px;
+}
+
+.ranking_part ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 6px;
+}
+
+.ranking_part ul li {
+    height: 32px;
+    display: inline-block;
+    
+}
+
+.ranking_part ul a {
+    display: block;
+    color: rgb(34, 34, 34);
+    font-size: 1rem;
+    font-weight: 600;
+    background: rgb(240, 240, 240);
+    padding: 5px 16px;
+    box-sizing: border-box;
+    border-radius: 16px;
+}
+
+.ranking_part .load {
+    color: rgb(240, 240, 240);
+    background: rgb(34, 34, 34);
+}
+
+.rt_img_wrap {
+    width: 350px;
+    height: 365px;
+    background: #d91833;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rt_img_wrap img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.rt_img_wrap > div {
+    font-size: 1rem;
+    color: #fff;
+    display: flex;
+    gap: 1rem;
+    margin: 13px auto;
+    text-align: center;
+}
+
+.number_p, .score_p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.fs {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.rt_img_wrap > span {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    background: linear-gradient(56deg, rgb(36, 56, 239) 0%, rgb(161, 41, 255) 100%), rgb(255, 255, 255);
+}
+
+.ranking_table {
+    width: 1368px;
+}
+
+.ranking_table > div {
+    display: none;
+}
+
+.ranking_table > div.on {
+    display: flex;
+}
+
+.c5_t table {
+    width: 994px;
+    height: 100%;
+    margin-left: 24px;
+}
+
+.ranking_point, .ranking_attack, .openattack, .timeattack, .moveattack, .backattack, .speedattack, .quickopen, .serve, .blocking, .dig, .set, .receive {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c5_t tr {
+    font-size: .9375rem;
+    border-top: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.c5_t tbody tr:hover {
+    background: #f5f5f5;
+}
+
+.c5_t th {
+    background: #f9f9f9;
+    padding: 0px 25px;
+    height: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.etc_width1 {
+    width: 65px;
+}
+
+.etc_width2 {
+    width: 103px;
+}
+
+.etc_width3 {
+    width: 30px;
+}
+
+.etc_width4 {
+    width: 50px;
+}
+
+.etc_width5 {
+    width: 50px;
+}
+
+.etc_width6 {
+    width: 83px;
+}
+
+.etc_width7 {
+    width: 65px;
+}
+
+.ranking_table th:after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    width: 1px;
+    height: 25px;
+    left: 5px;
+    background: #f0f0f0;    
+}
+
+.ranking_table th:first-child::after {
+    display: none;
+}
+
+.player_width {
+    width: 218px;
+}
+
+.player_width1 {
+    width: 130px;
+}
+
+.player_width2 {
+    width: 182px;
+}
+
+.ranking_table tbody {
+    text-align: center;
+}
+
+.ranking_table tbody td {
+    padding: 0 25px;
+    color: #555;
+}
+
+.player_wrap {
+    display: flex;
+    gap: 10px;
+    text-align: left;
+    align-items: center;
+}
+
+.w_268 img {
+    width: 29px;
+    height: 29px;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 100px;
+    display: inline-block;
+}
+
+/* content 6 */
+
+.content_06 {
+    position: relative;
+    margin-top: 75px;
+}
+
+.content_06 h2 {
+    margin: 0 0 20px;
+}
+
+.content_06 > a {
+    display: flex;
+    position: absolute;
+    gap: 3px;
+    top: 7px;
+    right: 0;
+    font-size: 1.125rem;
+    color: #666;
+    align-items: center;
+}
+
+/* shorts */
+
+.shorts_wrap {
+    width: 1368px;
+}
+
+.shorts_wrap ul {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0,1fr));
+}
+
+.shorts_img {
+    position: relative;
+    width: 261px;
+    height: 474px;
+}
+
+.shorts_img p:hover {
+    filter: brightness(200%);
+}
+
+.p1, .p2, .p3, .p4, .p5 {
+    /* display: block; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 16px;
+    background: no-repeat center;
+    background-size: cover;
+    text-indent: -9999px;
+}
+
+.p1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%), url(/images/shorts_01.jpg);
+}
+
+.p2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%), url(/images/shorts_02.jpg);
+}
+
+.p3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%), url(/images/shorts_03.jpg);
+}
+
+.p4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%), url(/images/shorts_04.jpg);
+}
+
+.p5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%), url(/images/shorts_05.jpg);
+}
+
+.shorts_txt {
+    width: 229px;
+    margin: 10px auto;
+    position: absolute;
+    left: 16px;
+    bottom: 0;
+}
+
+.shorts_p {
+    display: block;
+    height: 48px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.shorts_date {
+    color: rgb(153, 153, 153);
+    font-weight: 400;
+    font-size: .875rem;
+}
+
+.shorts_logo {
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    background: #fff url(/images/rs_logo.png) no-repeat center;
+    background-size: contain;
+    border-radius: 100%;
+    top: -35px;
+}
+
+/* content 7 */
+
+.content_07 {
+    height: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.youtube_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 186px;
+}
+
+.youtube_tp {
+    height: auto;
+}
+
+.youtube_txt h2 {
+    margin: 0 0 10px;
+}
+
+.youtube_txt p {
+    font-size: 1rem;
+    color: #4b5563;
+    margin-bottom: 30px;
+}
+
+.youtube_txt a {
+    position: relative;
+    background: #d91833;
+    padding: 18px 32px;
+    width: 73px;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.youtube_txt svg {
+    position: absolute;
+    top: 21px;
+    left: 90px;
+}
+
+.content_07 ul {
+    width: 924px;
+}
+
+.content_07 ul > button {
+    position: absolute;
+    top: 40%;
+    width: 50px;
+    height: 35px;
+    z-index: 100;
+}
+
+.content_07 ul li {
+    height: 350px;
+    margin: 0 0 20px 0;
+    position: relative;
+}
+
+.content_07 ul img {
+    width: 100%;
+    height: 246px;
+    position: absolute;
+    border-radius: 10px;
+    filter: brightness(70%);
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.youtube_detail {
+    width: 100%;
+    height: 88px;
+    margin-top: 16px;
+}
+
+.youtube_detail p {
+    display: block;
+    width: 442px;
+    height: 54px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    color: #222;
+}
+
+.youtube_date {
+    display: block;
+    height: 20px;
+    font-size: .875rem;
+    font-weight: 400;
+    color: #999;
+    margin: 14px 0 0; 
+}
+
+.a_svg {
+    max-width: 394px;
+    height: 198px;
+    padding: 24px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.youtube_li svg {
+    display: block;
+    margin: auto;
+    position: absolute;
+    z-index: 100;
+}
+
+.content_07 > a {
+    display: none;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    padding: 50px 0;
+    box-sizing: border-box;
+    background: rgb(57, 58, 69);
+}
+
+.footer_wrap {
+    max-width: 1356px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    gap: 40px;
+}
+
+.kovo_logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.term ul {
+    width: 100%;
+    display: inline-flex;
+    gap: 10px;
+}
+
+.term a {
+    color: #fff;
+    font-size: .9375rem;
+    font-weight: 500;
+}
+
+.footer_detail address, .footer_detail p {
+    color: #ffffff99;
+    font-size: .875rem;
+}
+
+.footer_detail {
+    width: 1074px;
+}
+
+address {
+    margin: 20px 0 0;
+}
+
+.term_p {
+    margin-top: 20px;
+}
+
+/* 토글 */
+
+.topmenu_bg {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.toggle {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -340px;
+    width: 340px;
+    height: 880px;
+    z-index: 500;
+    transition: all .4s ease-in-out;
+}
+
+.toggle_header {
+    background: #2438ef;
+    height: 70px;
+    padding: 16px 16px 24px;
+    color: #fff;
+}
+
+.toggle_header_top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 0 0 18px;
+}
+
+.language {
+    display: flex;
+    gap: 7px;
+}
+
+.icon {
+    display: flex;
+    gap: 15px;
+}
+
+.toggle_header_bottom {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.toggle_main {
+    background: #fff;
+    padding: 16px;
+    height: 100%;
+}
+
+.toggle_main li a {
+    width: 308px;
+    height: 40px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+}
+
+.toggle_main li p {
+    width: 234px;
+    margin: 0 0 0 16px;
+}
+
+.toggle_main img {
+    margin-left: 15px;
+    width: 8px;
+    height: 8px;
+}
+
+/* 미디어쿼리 */
+
+@media screen and (min-width: 769px) and (max-width: 1125px){
+
+    body {
+        position: relative;
+    }
+
+    /* 토글 */
+
+    .topmenu_bg {
+        display: none;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .mobile_menu {
+        display: block;
+    }
+
+    /* 헤더 */
+
+    .header_wrap {
+        height: 57px;
+        background: #fff;
+    }
+
+    /* 헤더 로고 부분 */
+
+    .logo_wrap {
+        width: auto;
+        height: 34px;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+
+    .logo_wrap_img img {
+        width: auto;
+        height: 34px;
+        margin-right: 5px;
+    }
+
+    .logo_wrap span {
+        color: #222;
+        font-size: 1rem;
+    }
+    
+    .logo_wrap_btn img {
+        top: 5px;
+        color: #222;
+    }
+
+    .explain {
+        top: 50px;
+        left: 5px;
+    }
+
+    /* gnb */
+
+    .gnb ul, .nav_bg {
+        display: none;
+    }
+
+    /* top menu */
+
+    .top_menu ul {
+        display: none;
+    }
+
+    /* 검색창 */
+
+    .search_wrap {
+        width: 100%;
+        height: 48px;
+        top: 57px;
+        left: 0;
+        padding: 24px 0;
+    }
+
+    .input_wrap {
+        width: 100%;
+        padding: 4px 16px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    /* logo_category */
+
+    .logo_category {
+        height: auto;
+        top: 57px;
+    }
+    
+    .logo_cont_wrap {
+        width: 100%;
+        padding: 24px 16px;
+    }
+
+    .hr {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /*men*/
+
+    .men_font {
+        font-size: 18px;
+    }
+
+    .men_emb_grop p {
+        display: none;
+    }
+
+    .m_emb img {
+        width: 56px;
+        height: 42px;
+    }
+    
+    /*women*/
+    
+    .women_font {
+        font-size: 18px;
+    }
+    
+    .women_emb_grop p {
+        display: none;
+    }
+
+    .women_emb_grop {
+        margin-bottom: 10px;
+    }
+    
+    .w_emb img {
+        width: 56px;
+        height: 42px;
+    }
+
+    /* 메인 배너 */
+
+    .swiper_banner img {
+        height: 768px;
+    }
+
+    /* 메인 컨텐츠 */
+
+    .main_content_wrap {
+        width: 100%;
+        padding-top: 60px;
+    }
+    
+    .main_content_wrap h2 {
+        font-size: 1.5rem;
+    }
+
+    /* content 1 */
+
+    .content_01 {
+        flex-direction: column;
+    }
+
+    .content_01 > div {
+        width: 100%;
+    }
+
+    /* 최근 경기 결과 */
+
+    .game_result {
+        margin-bottom: 65px;
+    }
+
+    .result_wrap > div, .next_wrap > div {
+        width: 100%;
+    }
+
+    .result_view {
+        width: 100%;
+    }
+
+    .match {
+        margin: auto;
+    }
+
+
+    /* content 2 */
+
+    .content_02 {
+        width: 100%;
+        height: auto;
+        margin-top: 95px;
+        gap: 20px;
+    }
+
+    .content_02 h2 {
+        margin: 0 0 20px;
+    }
+
+    /* 생생한 live */
+
+    .live_wrap {
+        width: 100%;
+    }
+
+    .lw_img {
+        width: 100%;
+        height: auto;
+    }
+
+    .live_wrap p {
+        width: 100%;
+    }
+
+    /* 실시간 이벤트 */
+
+    .event_wrap {
+        height: auto;
+    }
+
+    .event {
+        width: 100%;
+    }
+
+    /* 경기 하이라이트 */
+
+    .content_03 {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .highlight {
+        height: 201px;
+    }
+
+    .highlight ul {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        grid-template-columns: repeat(4, minmax(0,1fr));
+    }
+
+    .highlight ul li {
+        width:100%;
+    }
+
+    .video_img {
+        width: 100%;
+        height: auto;
+    }
+
+    .highlight ul img {
+        width: 100%;
+        height: 129px;
+    }
+
+    .video_txt {
+        min-width: 167px;
+        white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: keep-all;
+    }
+    
+    .video_date {
+        display: none;
+    }
+
+    /* 최근 경기결과 */
+
+    .content_04 {
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+        gap: 50px;
+    }
+
+    .all_result table {
+        width: 100%;
+    }
+
+    .t_name_01 {
+        width: 135px;
+    }
+
+    .t_date {
+        width: auto;
+    }
+
+    .t_name_01, .t_name_02 {
+        width: 32%;
+    }
+
+    .all_result img {
+        width: 33px;
+    }
+
+    /* 여자부 순위 */
+
+    .w_ranking table {
+        width: 100%;
+    }
+
+    /* 선수 랭킹 */
+
+    .ranking_part {
+        width: 100%;
+    }
+
+    .ranking_table {
+        width: 100%;
+        height: auto;
+    }
+
+    .c5_t {
+        width: 100%;
+        margin-left: 10px;
+        overflow-x: scroll;
+    }
+    
+    .ranking_table table {
+        margin: 0 auto;
+        width: 894px;
+    }
+
+    .c5_t::-webkit-scrollbar {
+        height: 10px;
+        background-color: #fff;
+    }
+    .c5_t::-webkit-scrollbar-thumb {
+        background-color: rgba(236, 91, 110, 0.534);
+        border-radius: 10px;
+    }
+
+    .fs {
+        font-size: 1rem;
+    }
+
+    .rt_img_wrap > div > p {
+        font-size: .75rem;
+    }
+
+    .rt_img_wrap img {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .ranking_point, .ranking_attack, .openattack, .timeattack, .moveattack, .backattack, .speedattack, .quickopen, .serve, .blocking, .dig, .set, .receive {
+        /* width: 849px; */
+        height: 365px;
+    }
+
+    /* SHORTS */
+
+    .content_06 {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .shorts_wrap {
+        width: 100%;
+        height: 330px;
+    }
+
+    .shorts_wrap ul {
+        overflow: hidden;
+        white-space: nowrap;
+        grid-template-columns: repeat(4, minmax(0,1fr));
+        gap: 16px;
+    }
+
+    .shorts_img {
+        width: 100%;
+        height: 330px;
+    }
+
+    .shorts_txt {
+        width: auto;
+        left: 4px;
+        padding: 0 10px;
+    }
+    
+    .shorts_p {
+        width: 100%;
+        overflow: hidden;
+        white-space: wrap;
+        text-overflow: ellipsis;
+        margin: 5px 0;
+    }
+
+    .shorts_date {
+        font-size: .75rem;
+    }
+
+    /* 유튜브 */
+
+    .content_07 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .youtube_txt {
+        width: 100%;
+        height: 97px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 20px;
+    }
+
+    .youtube_tp {
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    .youtube_txt p {
+        width: 100%;
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    .content_07 ul {
+        width: 100%;
+    }
+
+    .content_07 ul li {
+        width: 100%;
+    }
+
+    .content_07 ul img {
+        width: 100%;
+    }
+
+    .a_svg {
+        max-width: 100%;
+    }
+
+    .youtube_detail p {
+        display: -webkit-box;
+        width: 100%;
+        max-height: 54px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .content_07 > a {
+        display: none;
+    }
+
+    /* footer */
+
+    footer {
+        padding: 40px 0;
+    }
+
+    .footer_wrap {
+        margin: 0 16px;
+    }
+
+    .kovo_logo img {
+        width: 100px;
+    }
+
+    .footer_detail {
+        width:100%;
+    }
+
+    .term ul {
+        width: 100%;
+    }
+    .term a {
+        font-size: .875rem;
+    }
+
+    .footer_detail address, .footer_detail p {
+        font-size: .8125rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        position: relative;
+        min-width: 500px;
+    }
+
+    /* 토글 */
+
+    .toggle {
+        display: none;
+    }
+    
+    .toggle_main li a {
+        width: 100%;
+    }
+
+    .toggle_main li p {
+        width: 100%;
+    }
+
+    .mobile_menu {
+        display: block;
+    }
+    
+    /* 헤더 */
+
+    .header_wrap {
+        height: 57px;
+        background: #fff;
+    }
+
+    /* 헤더 로고 부분 */
+
+    .logo_wrap {
+        width: auto;
+        height: 34px;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+
+    .logo_wrap_img img {
+        width: auto;
+        height: 34px;
+        margin-right: 5px;
+    }
+
+    .logo_wrap span {
+        color: #222;
+        font-size: 1rem;
+    }
+
+    .explain {
+        top: 45px;
+        left: 5px;
+    }
+
+    /* gnb */
+
+    .gnb ul, .nav_bg {
+        display: none;
+    }
+
+    /* top menu */
+
+    .top_menu ul {
+        display: none;
+    }
+
+    /* 검색창 */
+
+    .search_wrap {
+        height: 48px;
+        top: 57px;
+        left: 0;
+        padding: 24px 0;
+    }
+
+    .input_wrap {
+        width: 100%;
+        padding: 4px 16px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    /* logo_category */
+
+    .logo_category {
+        height: 668px;
+        top: 57px;
+    }
+    
+    .logo_cont_wrap {
+        width: 100%;
+        padding: 24px 16px;
+    }
+
+    .hr {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /*men*/
+
+    .men_font {
+        font-size: 18px;
+    }
+
+    .men_emb_grop {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .men_emb_grop p {
+        display: none;
+    }
+
+    .m_emb img {
+        width: 56px;
+        height: 42px;
+    }
+    
+    /*women*/
+    
+    .women_font {
+        font-size: 18px;
+    }
+    
+    .women_emb_grop {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .women_emb_grop p {
+        display: none;
+    }
+
+    .w_emb img {
+        width: 56px;
+        height: 42px;
+    }
+
+    /* 메인 배너 */
+
+    .swiper_banner img {
+        height: 160px;
+        margin-top: 57px;
+    }
+
+    /* 메인 컨텐츠 */
+
+    .main_content_wrap {
+        width: 100%;
+    }
+
+    .main_content_wrap h2 {
+        font-size: 1.25rem;
+    }
+
+    /* content 1 */
+
+    .content_01 {
+        flex-direction: column;
+    }
+
+    .content_01 > div {
+        width: 100%;
+    }
+
+     /* 최근 경기 결과 */
+
+    .game_result {
+        margin-bottom: 65px;
+    }
+
+    .game_result > a, .next_game > a {
+        font-size: 0.875rem;
+    }
+
+    .game_result > a > svg, .next_game > a > svg {
+        width: 16px;
+    }
+
+    .result_wrap > div, .next_wrap > div {
+        width: 100%;
+    }
+
+
+    .result_view {
+        width: 100%;
+    }
+
+    .match {
+        margin: auto;
+    }
+
+    .result_02, .next_02 {
+        display: none;
+    }
+
+    /* content 2 */
+
+    .content_02 {
+        width: 100%;
+        height: auto;
+        margin-top: 70px;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content_02 h2 {
+        margin: 0 0 20px;
+    }
+
+    /* 생생한 live */
+
+    .live_wrap {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .lw_img {
+        width: 100%;
+        height: auto;
+    }
+
+    .live_wrap p {
+        width: 100%;
+    }
+
+     /* 실시간 이벤트 */
+
+    .event_wrap {
+        height: auto;
+    }
+
+    .event {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .event_wrap > a {
+        font-size: 0.875rem;
+        top: 10px;
+        right: 12px;
+    }
+
+    .event_wrap > a > svg {
+        width: 16px;
+    }
+
+    /* content 3 */
+
+    .content_03 {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    /* 경기 하이라이트 */
+
+    .highlight ul {
+        height: auto;
+        width: 100%;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+    }
+
+    .highlight ul li {
+        width:100%;
+    }
+
+    .video_img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .video_img svg {
+        z-index: 1;
+    }
+
+    .highlight ul img {
+        width: 100%;
+    }
+
+    .video_txt {
+        white-space: wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: keep-all;
+        font-size: 0.875rem;
+    }
+    
+    .video_date {
+        display: none;
+    }
+
+    .content_03 > a {
+        font-size: 0.875rem;
+    }
+
+    .content_03 > a > svg {
+        width: 16px;
+    }
+
+    /* content 4 */
+
+    .content_04 {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    /* 최근 경기결과 */
+
+    .all_result table {
+        width: 100%;
+    }
+
+    .team_01 > p, .team_02 > p {
+        font-size: 0.75rem;
+    }
+
+    /* 여자부 순위 */
+
+    .w_ranking_table {
+        overflow-x: scroll;
+    }
+
+    .w_ranking_table::-webkit-scrollbar {
+        height: 10px;
+        background-color: #fff;
+    }
+    .w_ranking_table::-webkit-scrollbar-thumb {
+        background-color: rgba(236, 91, 110, 0.534);
+        border-radius: 10px;
+    }
+
+    .w_ranking table {
+        width: 800px;
+        height: 100%;
+    }
+
+    .w_ranking td {
+        font-size: .8125rem;
+    }
+
+    .mobile_size {
+        width: 120px;
+    }
+
+    .w_90 {
+        width: 46px;
+    }
+
+    .w_52 {
+        width: 46px;
+    }
+
+    .w_80 {
+        width: 59px;
+    }
+
+    .w_67 {
+        width: 85px;
+    }
+
+    .all_result > a, .w_ranking > a {
+        font-size: .875rem;
+    }
+
+    .all_result > a > svg, .w_ranking > a > svg {
+        width: 16px;
+    }
+
+    /* content 5 */
+
+    .content_05 {
+        width: 100%;
+    }
+
+    .content_05 > a {
+        font-size: .875rem;
+    }
+
+    .content_05 > a > svg {
+        width: 16px;
+    }
+
+    /* 선수 랭킹 */
+
+    .ranking_point, .ranking_attack, .openattack, .timeattack, .moveattack, .backattack, .speedattack, .quickopen, .serve, .blocking, .dig, .set, .receive {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .racking_part_scroll {
+        overflow-x: scroll;
+        margin-bottom: 10px;
+    }
+
+    .ranking_part {
+        width: 950px;
+        margin: auto 0;
+        white-space: nowrap;
+    }
+    
+    .ranking_part ul {
+        line-height: 1.5;
+    }
+
+    .ranking_part ul li {
+        height: 35px;
+    }
+
+    .racking_part_scroll::-webkit-scrollbar {
+        height: 10px;
+        background-color: #fff;
+    }
+    .racking_part_scroll::-webkit-scrollbar-thumb {
+        background-color: rgba(236, 91, 110, 0.534);
+        border-radius: 10px;
+    }
+
+    .ranking_part ul a {
+        font-size: .8125rem;
+    }
+
+    .ranking_table {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .rt_img_wrap {
+        width: 100%;
+        margin: auto;
+    }
+
+    .rt_img_wrap img {
+        width: 55%;
+        margin: 8px auto;
+    }
+
+    .c5_t {
+        overflow-x: scroll;
+    }
+
+    .c5_t::-webkit-scrollbar {
+        height: 10px;
+        background-color: #fff;
+    }
+    .c5_t::-webkit-scrollbar-thumb {
+        background-color: rgba(236, 91, 110, 0.534);
+        border-radius: 10px;
+    }
+    
+    .c5_t table {
+        width: 100%;
+        margin: 0;
+    }
+
+    .ranking_attack, .openattack, .timeattack, .moveattack, .backattack, .speedattack, .quickopen, .serve, .blocking, .dig, .set, .receive {
+        display: none;
+    }
+
+    .c5_t td {
+        height: 60px;
+    }
+
+    /* content 6 */
+
+    .content_06 {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .content_06 > a {
+        font-size: .875rem;
+    }
+
+    .content_06 > a > svg {
+        width: 16px;
+    }
+
+    /* SHORTS */
+
+    .shorts_wrap {
+        width: 100%;
+        height: 260px;
+    }
+
+    .shorts_wrap ul {
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        gap: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .shorts_img {
+        width: 100%;
+        height: 260px;
+    }
+
+    .shorts_logo {
+        width: 28px;
+        height: 25px;
+        top: -25px;
+    }
+
+    .shorts_p {
+        font-size: .875rem;
+        width: 100%;
+        overflow: hidden;
+        white-space: wrap;
+        text-overflow: ellipsis;
+        margin: 5px 0;
+    }
+
+    .shorts_date {
+        display: none;
+    }
+
+    /* content 7 */
+
+    .content_07 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    /* 유튜브 */
+
+    .youtube_txt {
+        width: 100%;
+        height: 97px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 20px;
+    }
+
+    .youtube_tp {
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    .youtube_txt p {
+        width: 100%;
+        margin-bottom: 10px;
+        height: auto;
+    }
+
+    .youtube_txt a {
+        display: none;
+    }
+
+    .content_07 > a {
+        position: relative;
+        background: #fff;
+        border: 1px solid #c3c3c3;
+        border-radius: 5px;
+        padding: 10px 0;
+        color: #222;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        font-size: 1rem;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content_07 ul {
+        width: 100%;
+        /* overflow: hidden; */
+        white-space: wrap;
+    }
+
+    .content_07 ul li {
+        width: 100%;
+        height: auto;
+    }
+
+    .a_svg {
+        max-width: 100%;
+    }
+
+    .youtube_detail p {
+        font-size: 1rem;
+        width: 100%;
+        max-height: 54px;
+        overflow: hidden;
+    }
+
+    .m_hide {
+        display: none;
+    }
+
+    /* footer */
+
+    footer {
+        padding: 24px 0;
+    }
+
+    .footer_wrap {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+        padding: 0 16px;
+    }
+
+    .kovo_logo img {
+        width: 100px;
+    }
+
+    .footer_detail {
+        width:100%;
+    }
+
+    .term ul {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .term a {
+        font-size: 0.813rem;
+    }
+
+    .footer_detail address, .footer_detail p {
+        font-size: .688rem;
+    }
+}

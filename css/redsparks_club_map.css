@@ -1,0 +1,1103 @@
+body {
+    width: 100%;
+    position: relative;
+}
+
+
+/* header */
+header {
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+}
+
+.header_wrap {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    height: 90px;
+    transition: all 0.3s;
+    border-bottom: 1px solid #e5e7ed;
+}
+
+.h_full_box {
+    height: 90px;
+    background: #fff;
+}
+
+/* logo */
+
+.logo_wrap {
+    display: flex;
+    width: 167px;
+    margin-right: 34px;
+    align-items: center;
+}
+
+.logo_wrap a{
+    color: #222;
+    font-weight: 700;
+}
+
+.logo_wrap_img img {
+    display: block;
+    width: 70px;
+    height: 60.2px;
+    margin-right: 15px;
+}
+
+.logo_wrap span {
+    white-space: nowrap;
+    font-size: 1.25rem;
+    margin-right: 6px;
+}
+
+.logo_wrap_btn img {
+    width: 18px;
+}
+
+/* gnb */
+
+.gnb ul {
+    width: 534px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.gnb > ul > li > a  {
+    font-size: 1.125rem;
+    color: #222;
+}
+
+.gnb > ul > li > a:hover {
+    color: #d91833 !important;
+}
+
+.gnb dl {
+    position: absolute;
+    top: 130px;
+    line-height: 2.4;
+    z-index: 5;
+    display: none;
+}
+
+.gnb_01 {
+    position: absolute;
+    left: 23%;
+}
+
+.gnb_02 {
+    position: absolute;
+    left: 33%;
+}
+
+.gnb_03 {
+    position: absolute;
+    left: 43%;
+}
+
+.gnb_04 {
+    position: absolute;
+    left: 53%;
+}
+
+.gnb_05 {
+    position: absolute;
+    left: 63%;
+}
+
+.gnb_06 {
+    position: absolute;
+    left: 73%;
+}
+
+.gnb dt {
+    font-size: 1.375rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.gnb dd {
+    font-size: 1rem;
+    color: #565656;
+}
+
+.gnb dd a:hover {
+    font-size: 1rem;
+    color: rgb(217, 24, 51);
+}
+
+.nav_bg {
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    top: 90px;
+    left: 0;
+    height: 333px;
+    border-top: 1px solid #e6e2e2;
+    display: none;
+}
+
+/* top menu */
+
+.top_menu ul {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_menu > ul > li > a {
+    font-size: .9375rem;
+    color: #222;
+}
+
+.nav_dash{
+    display: inline-block;
+    margin-left: 10px;
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #222;
+}
+
+/* mobile menu */
+
+.mobile_menu ul {
+    display: flex;
+    justify-content: space-between;
+    width: 104px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}
+
+/* 검색창 */
+
+.search_wrap {
+    display: none;
+    width: 100%;
+    height: 184px;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    background: #fff;
+    border-top: 1px solid #e6e2e2;
+}
+
+.input_wrap {
+    display: flex;
+    gap: 10px;
+    background: rgb(248, 248, 248);
+    width: 800px;
+    padding: 15px 32px;
+    box-sizing: border-box;
+    margin: 60px auto;
+    border-radius: 50px;
+    align-items: center;
+}
+
+input {
+    font-size: 20px;
+    width: 100%;
+    font-weight: 700;
+    height: 40px;
+    background: none;
+    border: none;
+}
+
+input::placeholder {
+    color: #a8a8a8;
+}
+
+/* logo_category */
+
+.logo_category{
+    width: 100%;
+    height:660px;
+    background-color:#ffffff;
+    border-top:1px solid #efefef;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 90px;
+    z-index: 1000;
+    display: none;
+}
+
+.logo_cont_wrap{
+    width: 1356px;
+    margin: 0 auto;
+    padding-top:50px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+/*men*/
+
+.men_font{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.d_flex{
+    display: flex;
+    justify-content: center;
+}
+
+.men_emb_grop{
+    display: flex;
+    padding-top: 20px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.men_emb_grop p{
+    font-size:16px;
+}
+
+.hr{
+    width: 1356px;
+    height: 1px;
+    background-color: #efefef;
+    margin: 40px 0;
+}
+
+/*women*/
+
+.women_font{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.m_emb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    background: #f9f9f9;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    transition: border 0.4s;
+}
+
+.w_emb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #fff;
+    background: #f9f9f9;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    transition: border 0.4s;
+}
+
+.d_flex{
+    display: flex;
+    justify-content: center;
+}
+
+.women_emb_grop{
+    display: flex;
+    padding-top: 20px;
+    box-sizing: border-box;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.women_emb_grop p{
+    font-size:16px;
+}
+
+.m_emb img{
+    width: 70px;
+    height: 60px;
+}
+
+.w_emb img{
+    width: 70px;
+    height: 60px;
+}
+
+#jung_emb{
+    border: 5px solid #D91833 !important;
+}
+
+.kovo_home{
+    margin:0 auto;
+    width: 172px;
+    height:55px;
+    color:#ffffff;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-top:15px;
+    box-sizing: border-box;
+    background: rgb(36, 56, 239);
+}
+
+
+
+/* main */
+.main{
+    position: relative;
+    z-index: 1;
+    margin-bottom: 144px;
+}
+.main_banner{
+    display: flex;
+    align-items: center;
+    padding:0 276px;
+    box-sizing: border-box;
+    width: 100%;
+    height:200px;
+    background: url('/images/pc_sub_banner_jeong_1.png') no-repeat center;
+    background-position-y: 0px;
+}
+.main_banner span{
+    font-size: 48px;
+    font-weight: 700;
+    color:#fff;
+}
+
+/* sub_nav*/
+.sub_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:57px;
+    background:#fff;
+    border-bottom: 1px solid #efefef;
+    margin-bottom:45px;
+}
+.sub_nav ul{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    gap:16px;
+    color:#666;
+}
+.ac_font{
+    color:#000;
+    border-bottom: 2px solid #000;
+}
+.sub_nav ul li{
+    width: 130px;
+    height: 58px;
+}
+.sub_nav ul li a{
+    display: block;
+    padding-top:16px;
+    box-sizing: border-box;
+}
+
+/* content */
+.contents_wrap{
+    max-width: 1124px;
+    margin:0 auto;
+}
+.content_h{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+.content_h h2{
+    font-size: 36px;
+    font-weight: 700;
+    color:#000
+}
+.content_h ul{
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+    gap: 5px;
+}
+
+.content_h ul li img{
+    width: 17px;
+    padding-bottom: 4px;
+    box-sizing: border-box;
+}
+
+.content_h ul li::after{
+    display: inline-block;
+    content:"";
+    width: 12px;
+    height: 12px;
+    background: url('/images/right_arrow_gray.png') no-repeat center;
+    background-size: contain;
+}
+.content_h ul li:last-child::after{
+    display: none;
+}
+.gray_font{
+    color:#666;
+}
+.content_h ul li span{
+    font-size: 14px;
+    font-weight: lighter;
+}
+.cont1{
+    font-size: 16px;
+    color:#222222;
+}
+.cont1 h2{
+    font-size:24px;
+    color:#222222;
+    margin-bottom:18px;
+}
+.cont1 h3{
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+.cont1 img{
+    margin-bottom:16px;
+}
+.cont1 p{
+    margin-bottom: 16px;
+}
+.cont1 ul {
+    padding-left: 40px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+.cont1 ul li{
+    list-style-type: disc
+}
+#search_txt{
+    font-size: 18px;
+    font-weight: bold;
+}
+#search_txt2{
+    font-size: 18px;
+    font-weight: bold;
+}
+.img_box{
+    margin: 0 auto;
+    height:375px;
+    margin-bottom:16px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.img_box a{
+    display: block;
+}
+.area_tb{
+    width: 89%;
+    margin-left: 10px;
+    border-collapse: collapse;
+    text-align: center;
+}
+.area_tb th{
+    border-top:1px solid #D91833;
+    border-right:1px solid #c6c6c6;
+    padding: 15px 0px;
+    box-sizing: border-box;
+    background: #efefef;
+}
+.area_tb td{
+    border-right:1px solid #c6c6c6;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #efefef;
+    padding: 15px 0px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+/* footer */
+footer {
+    /* height: 227px; */
+    padding: 50px 0;
+    box-sizing: border-box;
+    /* display: flex;
+    align-items: center; */
+    background: rgb(57, 58, 69);
+}
+.footer_wrap {
+    max-width: 1124px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+}
+.kovo_logo img {
+    width: 160px;
+}
+.term ul {
+    width: 852px;
+    display: flex;
+    padding: 20px 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.term a {
+    color: #fff;
+    font-size: .9375rem;
+    font-weight: bold;
+}
+.footer_detail address, .footer_detail p {
+    color: #ffffff99;
+    font-size: .875rem;
+}
+.footer_detail {
+    width: 900px;
+}
+address {
+    margin: 20px 0 0;
+}
+.term_p {
+    margin-top: 20px;
+}
+
+
+
+/* 토글 */
+
+.topmenu_bg {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.toggle {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -340px;
+    width: 340px;
+    height: 880px;
+    z-index: 500;
+    transition: all .4s ease-in-out;
+}
+
+.toggle_header {
+    background: #2438ef;
+    height: 70px;
+    padding: 16px 16px 24px;
+    color: #fff;
+}
+
+.toggle_header_top {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    margin: 0 0 18px;
+}
+
+.language {
+    display: flex;
+    gap: 7px;
+}
+
+.icon {
+    display: flex;
+    gap: 15px;
+}
+
+.toggle_header_bottom {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.toggle_main {
+    background: #fff;
+    padding: 16px;
+    height: 100%;
+}
+
+.toggle_main li a {
+    width: 308px;
+    height: 40px;
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+}
+
+.toggle_main li p {
+    width: 234px;
+    margin: 0 0 0 16px;
+}
+
+.toggle_main img {
+    margin-left: 15px;
+    width: 8px;
+    height: 8px;
+}
+
+
+/* media query */
+/* 웹 사이즈 */
+
+    .mobile_menu {
+        display: none;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    .topmenu_bg {
+        display: none;
+    }
+
+
+/* 랩탑 사이즈 */
+
+@media screen and (min-width: 769px) and (max-width: 1124px){
+    body {
+        position: relative;
+    }
+
+    /* 토글 */
+
+    .topmenu_bg {
+        display: none;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    /* 헤더 */
+
+    .h_full_box {
+        height: 57px;
+    }
+
+    .header_wrap {
+        height: 57px;
+        background: #fff;
+    }
+
+    /* 헤더 로고 부분 */
+
+    .logo_wrap {
+        width: auto;
+        height: 34px;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+
+    .logo_wrap_img img {
+        width: auto;
+        height: 34px;
+        margin-right: 5px;
+    }
+
+    .logo_wrap span {
+        color: #222;
+        font-size: 1rem;
+    }
+    
+    .logo_wrap_btn img {
+        top: 5px;
+        color: #222;
+    }
+
+    /* gnb */
+
+    .gnb ul, .nav_bg {
+        display: none;
+    }
+
+    /* top menu */
+
+    .top_menu ul {
+        display: none;
+    }
+
+    /* 검색창 */
+
+    .search_wrap {
+        width: 100%;
+        height: 48px;
+        top: 57px;
+        left: 0;
+        padding: 24px 0;
+    }
+
+    .input_wrap {
+        width: 100%;
+        padding: 4px 16px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    /* logo_category */
+
+    .logo_category {
+        height: auto;
+        top: 57px;
+    }
+    
+    .logo_cont_wrap {
+        width: 100%;
+        padding: 24px 16px;
+    }
+
+    .hr {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /*men*/
+
+    .men_font {
+        font-size: 18px;
+    }
+
+    .men_emb_grop p {
+        display: none;
+    }
+
+    .m_emb img {
+        width: 56px;
+        height: 42px;
+    }
+    
+    /*women*/
+    
+    .women_font {
+        font-size: 18px;
+    }
+    
+    .women_emb_grop p {
+        display: none;
+    }
+
+    .women_emb_grop {
+        margin-bottom: 10px;
+    }
+    
+    .w_emb img {
+        width: 56px;
+        height: 42px;
+    }
+    
+    .mobile_menu{
+        display: block;
+    }
+
+    /* map */
+    .contents_wrap {
+        width: 89%;
+    }
+    .content_h h2{
+        font-size: 32px;
+    }
+    .content_h ul li span{
+        font-size: 14px;
+        font-weight: lighter;
+    }
+    .area_tb{
+        margin-left: 10px;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    .area_tb th{
+        padding: 10px 10px;
+    }
+    .area_tb td{
+        padding: 10px 10px;
+    }
+    .img_box{
+        flex-wrap: wrap;
+        width: 89%;
+        height: 100%;
+    }
+
+
+      /* footer */
+    footer{
+        padding:20px 0;
+    }
+    .footer_wrap{
+        margin:0 16px;
+        display: block;
+    }
+
+    .kovo_logo img {
+        width: 100px;
+    }
+
+    .footer_detail {
+        width:100%;
+    }
+
+    .term ul {
+        width: 100%;
+    }
+    .term a {
+        font-size: .875rem;
+    }
+
+    .footer_detail address, .footer_detail p {
+        font-size: .8125rem;
+    }
+}
+
+
+/* 모바일 */
+
+@media screen and (max-width: 768px) {
+    body{
+        min-width: 500px;
+    }
+
+     /* 토글 */
+
+     .toggle {
+        display: none;
+    }
+    
+    .toggle_main li a {
+        width: 100%;
+    }
+
+    .toggle_main li p {
+        width: 100%;
+    }
+    
+    /* 헤더 */
+
+    .h_full_box {
+        height: 57px;
+    }
+
+    .header_wrap {
+        height: 57px;
+        background: #fff;
+    }
+
+    /* 헤더 로고 부분 */
+
+    .logo_wrap {
+        width: auto;
+        height: 34px;
+        position: absolute;
+        top: 10px;
+        left: 15px;
+    }
+
+    .logo_wrap_img img {
+        width: auto;
+        height: 30px;
+        margin-right: 5px;
+    }
+
+    .logo_wrap span {
+        color: #222;
+        font-size: 1rem;
+    }
+
+    /* gnb */
+
+    .gnb ul, .nav_bg {
+        display: none;
+    }
+
+    /* top menu */
+
+    .top_menu ul {
+        display: none;
+    }
+
+    /* 검색창 */
+
+    .search_wrap {
+        height: 48px;
+        top: 57px;
+        left: 0;
+        padding: 24px 0;
+    }
+
+    .input_wrap {
+        width: 100%;
+        padding: 4px 16px;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    /* logo_category */
+
+    .logo_category {
+        height: 668px;
+        top: 57px;
+    }
+    
+    .logo_cont_wrap {
+        width: 100%;
+        padding: 24px 16px;
+    }
+
+    .hr {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    /*men*/
+
+    .men_font {
+        font-size: 18px;
+    }
+
+    .men_emb_grop {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .men_emb_grop p {
+        display: none;
+    }
+
+    .m_emb img {
+        width: 56px;
+        height: 42px;
+    }
+    
+    /*women*/
+    
+    .women_font {
+        font-size: 18px;
+    }
+    
+    .women_emb_grop {
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .women_emb_grop p {
+        display: none;
+    }
+
+    .w_emb img {
+        width: 56px;
+        height: 42px;
+    }
+
+    
+    .mobile_menu{
+        display: block;
+    }
+    
+    
+    /* banner */
+    .main_banner{
+        height: 109px;
+        background: #D91833;
+        padding: 0px;
+    }
+    .main_banner>span{
+        font-size: 30px;
+        display: block;
+        margin: 0 auto;
+    }
+    /* sub_nav */
+    .sub_nav{
+        display: none;
+    }
+ 
+    /* map */
+    .contents_wrap {
+        width: 95%;
+    }
+    .content_h ul{
+        display: none;
+    }
+    .content_h h2{
+        font-size: 24px;
+        margin-top: 30px;
+    }
+    .cont1 h2{
+        font-size: 20px;
+    }
+    .area_tb{
+        width: 100%;
+        margin-left: 10px;
+        border-collapse: collapse;
+        text-align: center;
+    }
+    .area_tb th{
+        padding: 5px 0;
+    }
+    .area_tb td{
+        padding: 5px 0;
+    }
+    .img_box{
+        flex-wrap: wrap;
+        width: 89%;
+        height: 100%;
+    }
+ 
+
+
+   /* footer */
+
+    footer {
+        padding: 24px 0;
+    }
+
+    .footer_wrap {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+        padding: 0px 16px;
+    }
+
+    .kovo_logo img {
+        width: 100px;
+    }
+
+    .footer_detail {
+        width: 100%;
+    }
+
+    .term ul {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .term a {
+        font-size: 0.813rem;
+    }
+
+    .footer_detail address,
+    .footer_detail p {
+        font-size: .688rem;
+    }
+}
