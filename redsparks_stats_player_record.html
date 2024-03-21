@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Player-record</title>
-  <link rel="stylesheet" href="/css/reset.css">
-  <link rel="stylesheet" href="/css/redsparks_stats_player_record.css">
-  <link rel="icon" href="/images/rs_logo.png">
-  <script src="/js/jquery-3.7.1.min.js"></script>
-  <script src="../js/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/redsparks_stats_player_record.css">
+  <link rel="icon" href="./images/rs_logo.png">
+  <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/jquery-3.7.1.min.js"></script>
   <script  type="text/javascript">
     $(document).ready(function(){
         /* 메뉴바 마우스 오버(enter and leave) 이벤트 */
@@ -40,7 +40,7 @@
         $(".logo_wrap_btn").on('click', function (e) {
             e.preventDefault();
             let arrow_d = $(".logo_wrap_img img").attr('src');
-            let arrow_u = "/images/arrow_u.png";
+            let arrow_u = "./images/arrow_u.png";
             if (active2 == 0 && holding2 == 0) {
                 holding2 = 1;
                 active2 = 1;

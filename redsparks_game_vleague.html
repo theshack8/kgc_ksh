@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="./css/nice-select.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- select plugin -->
-    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="./js/jquery.nice-select.min.js"></script>
     <title>GAME</title>
-    <link rel="stylesheet" href="css/reset2.css">
-    <link rel="stylesheet" href="css/redsparks_game_vleague.css">
-    <link rel="icon" href="/images/rs_logo.png">
+    <link rel="stylesheet" href="./css/reset2.css">
+    <link rel="stylesheet" href="./css/redsparks_game_vleague.css">
+    <link rel="icon" href="./images/rs_logo.png">
 </head>
 <body>
     <div class="wrap">
@@ -617,7 +617,7 @@
             $(".logo_wrap_btn").on('click', function (e) {
                 e.preventDefault();
                 let arrow_d = $(".logo_wrap_img img").attr('src');
-                let arrow_u = "/images/arrow_u.png";
+                let arrow_u = "./images/arrow_u.png";
                 if (active2 == 0 && holding2 == 0) {
                     holding2 = 1;
                     active2 = 1;
