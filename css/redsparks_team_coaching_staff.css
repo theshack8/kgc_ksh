@@ -384,7 +384,7 @@ input::placeholder {
     height: 75px;
     padding: 62px;
     position: relative;
-    background: url(/images/pc_sub_banner_jeong.5be398ba.png);
+    background: url(../images/pc_sub_banner_jeong.5be398ba.png);
 }
 
 .banner span {
@@ -930,7 +930,7 @@ address {
     .banner {
         height: 50px;
         text-align: center;
-        background: url(/images/tablet_sub_banner_jeong.56840093.png);
+        background: url(../images/tablet_sub_banner_jeong.56840093.png);
     }
 
     /* staff wrap */
